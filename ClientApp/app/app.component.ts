@@ -1,6 +1,9 @@
 //https://github.com/sstorie/experiments/blob/master/angular2-animated-notifications-panel/app/app.component.ts
 
 import { Component } from "@angular/core";
+import { NotificationsService } from "./notifications/notifications.service";
+
+import { NotificationPanelComponent } from "./notifications/notification-panel.component";
 
 @Component({
     templateUrl: "./app.component.html",
@@ -8,6 +11,16 @@ import { Component } from "@angular/core";
     selector: "app"
 })
 export class AppComponent {
-    constructor() { }
+    constructor(
+        private _notificationsService: NotificationsService
+    ) {
+
+        for (let i = 0; i < 10; i++) {
+            let n = this._notificationsService.createRandomNotification();
+            this._notificationsService.addNotification(n);
+        }
+
+        this._notificationsService.startRandomGeneration();
+    }
     
 }

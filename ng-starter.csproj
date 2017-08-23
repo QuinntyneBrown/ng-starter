@@ -70,14 +70,22 @@
     <Content Include="ClientApp\app\landing\landing-page.component.css">
       <DependentUpon>landing-page.component.html</DependentUpon>
     </Content>
+    <Content Include="ClientApp\app\notifications\notification-panel.component.css">
+      <DependentUpon>notification-panel.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\notifications\notification.component.css">
+      <DependentUpon>notification.component.html</DependentUpon>
+    </Content>
     <Content Include="ClientApp\styles\page.css" />
     <Content Include="index.html" />
     <Content Include="package.json" />
     <None Include="packages.config" />
     <Content Include="tsconfig.json" />
     <Content Include="ClientApp\app\landing\landing-page.component.html" />
-    <Content Include="ClientApp\app\shared\flyout.component.css" />
-    <Content Include="ClientApp\app\shared\flyout.component.html" />
+    <Content Include="ClientApp\app\notifications\notification.component.html" />
+    <Content Include="ClientApp\app\notifications\notification-panel.component.html" />
+    <Content Include="ClientApp\app\shared\header.component.css" />
+    <Content Include="ClientApp\app\shared\header.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -90,7 +98,6 @@
     <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClientApp\app\shared\components\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
@@ -105,12 +112,26 @@
       <DependentUpon>landing-page.component.html</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\app\landing\landing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\notifications\enum-extensions.ts" />
+    <TypeScriptCompile Include="ClientApp\app\notifications\notification-panel.component.ts">
+      <DependentUpon>notification-panel.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\notifications\notification-type.ts" />
+    <TypeScriptCompile Include="ClientApp\app\notifications\notification.component.ts">
+      <DependentUpon>notification.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\notifications\notification.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\notifications\notifications.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\notifications\notifications.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\components\index.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\constants.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\services\index.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\services\storage.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="ClientApp\main.ts" />
     <TypeScriptCompile Include="ClientApp\polyfills.ts" />
-    <TypeScriptCompile Include="ClientApp\app\shared\flyout.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\index.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\header.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

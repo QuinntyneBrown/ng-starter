@@ -4,12 +4,14 @@ import {RouterModule} from "@angular/router";
 import {HttpClientModule,HTTP_INTERCEPTORS} from "@angular/common/http";
 
 import { Storage } from "./services/storage.service";
+import { HeaderComponent } from "./components/header.component";
 
 const providers = [
     Storage
 ];
 
 const declarables = [
+    HeaderComponent
 ];
 
 @NgModule({

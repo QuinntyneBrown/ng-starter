@@ -8,13 +8,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { LandingModule } from "./landing/landing.module";
+import { NotificationsModule } from "./notifications/notifications.module";
 import { SharedModule } from "./shared/shared.module";
 
 import { AppComponent } from './app.component';
 
-import {
-    RoutingModule
-} from "./app.routing";
 
 const declarables = [
     AppComponent
@@ -30,7 +28,7 @@ const declarables = [
         RouterModule,
 
         LandingModule,
-        RoutingModule,
+        NotificationsModule,
         SharedModule,
     ],
     declarations: [declarables],
