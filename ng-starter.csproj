@@ -7,8 +7,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion></ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{155D8A45-078C-45AA-AC34-55C676ABE05E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -24,8 +23,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -78,6 +76,8 @@
     <None Include="packages.config" />
     <Content Include="tsconfig.json" />
     <Content Include="ClientApp\app\landing\landing-page.component.html" />
+    <Content Include="ClientApp\app\shared\flyout.component.css" />
+    <Content Include="ClientApp\app\shared\flyout.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -90,6 +90,7 @@
     <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ClientApp\app\shared\components\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +110,7 @@
     <TypeScriptCompile Include="ClientApp\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="ClientApp\main.ts" />
     <TypeScriptCompile Include="ClientApp\polyfills.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\flyout.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -132,8 +134,7 @@
           <IISUrl>http://localhost:63212/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
