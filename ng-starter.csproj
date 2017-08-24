@@ -72,6 +72,8 @@
     <Content Include="ClientApp\app\landing\landing-page.component.css">
       <DependentUpon>landing-page.component.html</DependentUpon>
     </Content>
+    <TypeScriptCompile Include="ClientApp\app\shared\services\modal-backdrop.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\services\modal-ref.ts" />
     <Content Include="ClientApp\styles\page.css" />
     <Content Include="index.html" />
     <Content Include="package.json" />
@@ -105,6 +107,9 @@
     </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\app\landing\landing.module.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\constants.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\services\modal-stack.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\services\modal-window.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\services\modal.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\services\storage.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="ClientApp\main.ts" />
