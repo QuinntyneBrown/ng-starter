@@ -16,7 +16,8 @@ import { ModalRef } from "./modal-ref";
 
 @Injectable()
 export class ModalStack {
-    constructor() {
+    constructor(
+    ) {
 
     }
     
