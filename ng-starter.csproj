@@ -69,19 +69,32 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ClientApp\app\landing\dynamic.component.css">
-      <DependentUpon>dynamic.component.html</DependentUpon>
+    <Content Include="ClientApp\app\landing\landing-modal.component.css">
+      <DependentUpon>landing-modal.component.html</DependentUpon>
     </Content>
     <Content Include="ClientApp\app\landing\landing-page.component.css">
       <DependentUpon>landing-page.component.html</DependentUpon>
     </Content>
+    <Content Include="ClientApp\app\landing\test.component.css">
+      <DependentUpon>test.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\shared\components\backdrop.component.css">
+      <DependentUpon>backdrop.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\shared\components\backdrop.component.html" />
+    <Content Include="ClientApp\app\shared\components\modal-window.component.css">
+      <DependentUpon>modal-window.component.html</DependentUpon>
+    </Content>
+    <Content Include="ClientApp\app\shared\components\modal-window.component.html" />
+    <Content Include="ClientApp\styles\modal.css" />
     <Content Include="ClientApp\styles\page.css" />
     <Content Include="index.html" />
     <Content Include="package.json" />
     <None Include="packages.config" />
     <Content Include="tsconfig.json" />
     <Content Include="ClientApp\app\landing\landing-page.component.html" />
-    <Content Include="ClientApp\app\landing\dynamic.component.html" />
+    <Content Include="ClientApp\app\landing\landing-modal.component.html" />
+    <Content Include="ClientApp\app\landing\test.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -104,14 +117,25 @@
     <TypeScriptCompile Include="ClientApp\app\app.routing.ts" />
     <TypeScriptCompile Include="ClientApp\app\environment.ts" />
     <TypeScriptCompile Include="ClientApp\app\index.ts" />
-    <TypeScriptCompile Include="ClientApp\app\landing\dynamic.component.ts">
-      <DependentUpon>dynamic.component.html</DependentUpon>
+    <TypeScriptCompile Include="ClientApp\app\landing\landing-modal.component.ts">
+      <DependentUpon>landing-modal.component.html</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\app\landing\landing-page.component.ts">
       <DependentUpon>landing-page.component.html</DependentUpon>
     </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\app\landing\landing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\landing\test.component.ts">
+      <DependentUpon>test.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\shared\components\backdrop.component.ts">
+      <DependentUpon>backdrop.component.html</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\shared\components\modal-window.component.ts">
+      <DependentUpon>modal-window.component.html</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\app\shared\constants.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\services\content-ref.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\services\modal.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\services\storage.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="ClientApp\main.ts" />
