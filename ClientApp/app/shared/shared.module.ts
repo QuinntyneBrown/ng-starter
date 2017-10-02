@@ -3,20 +3,25 @@ import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
 import {HttpClientModule,HTTP_INTERCEPTORS} from "@angular/common/http";
 
+import { HeaderComponent } from "./components/header.component";
+import { HamburgerButtonComponent } from "./components/hamburger-button.component";
+
 import { Storage } from "./services/storage.service";
 
 const providers = [
     Storage
 ];
 
-const declarables = [
+const declarations = [
+    HamburgerButtonComponent,
+    HeaderComponent
 ];
 
 @NgModule({
     imports: [CommonModule, RouterModule, HttpClientModule],
     entryComponents: [],
-    declarations: [declarables],
-    exports:[declarables],
-    providers: providers
+    declarations,
+    exports:declarations,
+    providers
 })
 export class SharedModule {}
