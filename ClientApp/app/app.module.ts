@@ -7,7 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
-import { LandingModule } from "./landing/landing.module";
+import { PagesModule } from "./pages/pages.module";
 import { SharedModule } from "./shared/shared.module";
 
 import { AppComponent } from './app.component';
@@ -29,7 +29,7 @@ const declarables = [
         ReactiveFormsModule,
         RouterModule,
 
-        LandingModule,
+        PagesModule,
         RoutingModule,
         SharedModule,
     ],
