@@ -26,6 +26,8 @@ bld/
 
 ClientApp/**/*.js
 ClientApp/**/*.js.map
+e2e/**/*.js
+e2e/**/*.js.map
 
 dist
 

@@ -69,18 +69,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ClientApp\app\landing\landing-page.component.css">
+    <Content Include="ClientApp\app\pages\landing-page.component.css">
       <DependentUpon>landing-page.component.html</DependentUpon>
     </Content>
-    <TypeScriptCompile Include="ClientApp\app\shared\services\modal\modal-backdrop.ts" />
-    <TypeScriptCompile Include="ClientApp\app\shared\services\modal\modal-dismiss-reasons.ts" />
-    <TypeScriptCompile Include="ClientApp\app\shared\services\modal\modal-ref.ts" />
     <Content Include="ClientApp\styles\page.css" />
     <Content Include="index.html" />
     <Content Include="package.json" />
+    <Content Include="e2e\tsconfig.e2e.json" />
     <None Include="packages.config" />
+    <Content Include="protractor.conf.js" />
     <Content Include="tsconfig.json" />
-    <Content Include="ClientApp\app\landing\landing-page.component.html" />
+    <Content Include="ClientApp\app\pages\landing-page.component.html" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
@@ -103,18 +102,17 @@
     <TypeScriptCompile Include="ClientApp\app\app.routing.ts" />
     <TypeScriptCompile Include="ClientApp\app\environment.ts" />
     <TypeScriptCompile Include="ClientApp\app\index.ts" />
-    <TypeScriptCompile Include="ClientApp\app\landing\landing-page.component.ts">
+    <TypeScriptCompile Include="ClientApp\app\pages\landing-page.component.ts">
       <DependentUpon>landing-page.component.html</DependentUpon>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="ClientApp\app\landing\landing.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\pages\pages.module.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\constants.ts" />
-    <TypeScriptCompile Include="ClientApp\app\shared\services\modal\modal-stack.ts" />
-    <TypeScriptCompile Include="ClientApp\app\shared\services\modal\modal-window.ts" />
-    <TypeScriptCompile Include="ClientApp\app\shared\services\modal\modal.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\services\storage.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="ClientApp\main.ts" />
     <TypeScriptCompile Include="ClientApp\polyfills.ts" />
+    <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="e2e\landing.po.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

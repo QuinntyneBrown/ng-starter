@@ -13,7 +13,7 @@ module.exports = {
         publicPath: "dist/"
     },
     resolve: {
-        extensions: ['.ts', '.css', '.html', '.js']
+        extensions: ['.ts', '.js', '.jpg', '.jpeg', '.gif', '.png', '.css', '.html']
     },
     module: {
         loaders: [
@@ -24,7 +24,9 @@ module.exports = {
                 },
                 {
                     loader: 'angular2-template-loader'
-                }]
+                }
+                ],
+                exclude: [/\.(spec|e2e)\.ts$/]
             },
             { test: /\.css$/, loader: 'raw-loader' },
             { test: /\.html$/, loaders: ['html-loader'] },

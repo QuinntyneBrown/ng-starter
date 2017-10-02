@@ -1,6 +1,14 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
-import { LANDING_ROUTES } from "./landing/landing.module";
+import { LandingPageComponent } from "./pages/landing-page.component";
+
+export const ROUTES = [
+    {
+        path: '',
+        pathMatch: 'full',
+        component: LandingPageComponent
+    }
+]
 
 export const RoutingModule = RouterModule.forRoot([
-    ...LANDING_ROUTES
+    ...ROUTES
 ]);
