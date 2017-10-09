@@ -121,6 +121,7 @@
     <TypeScriptCompile Include="ClientApp\app\shared\components\hamburger-button.component.ts">
       <DependentUpon>hamburger-button.component.html</DependentUpon>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\app\shared\services\logger.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\services\storage.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="ClientApp\main.ts" />
